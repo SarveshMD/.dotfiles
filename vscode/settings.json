@@ -1,0 +1,99 @@
+{
+	"security.workspace.trust.untrustedFiles": "open",
+	"workbench.iconTheme": "material-icon-theme",
+	"window.closeWhenEmpty": false,
+	"editor.detectIndentation": true,
+	"editor.dragAndDrop": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"editor.fontSize": 18,
+	"editor.fontFamily": "Cascadia Code, Operator Mono, Source Code Pro",
+	"editor.fontWeight": "400",
+	"explorer.sortOrder": "default",
+	"window.openFilesInNewWindow": "off",
+	"window.restoreFullscreen": true,
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"editor.formatOnPaste": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"editor.selectionHighlight": true,
+	"editor.occurrencesHighlight": false,
+	"window.restoreWindows": "preserve",
+	"python.languageServer": "Pylance",
+	// "editor.defaultFormatter": "esbenp.prettier-vscode",
+	// "prettier.printWidth": 10000,
+	// "prettier.useTabs": true,
+	// "prettier.tabWidth": 4,
+	// "prettier.trailingComma": "all",
+	"explorer.confirmDelete": false,
+	"zenMode.restore": false,
+	"editor.cursorStyle": "line",
+	"editor.emptySelectionClipboard": false,
+	"files.trimTrailingWhitespace": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"explorer.confirmDragAndDrop": false,
+	"editor.mouseWheelZoom": true,
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"python.showStartPage": false,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"window.title": "(ツ)_/¯ ${dirty}${activeEditorShort}${separator}${rootName}",
+	"python.formatting.provider": "none",
+	"python.pythonPath": "/usr/bin/python",
+	"editor.linkedEditing": true,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"editor.inlineSuggest.enabled": true,
+	"python.defaultInterpreterPath": "/usr/bin/python",
+	"git.enableCommitSigning": true,
+	"githubIssues.queries": [
+		{
+			"label": "All",
+			"query": "repo:${owner}/${repository} sort:created-desc"
+		},
+		{
+			"label": "Open",
+			"query": "is:open repo:${owner}/${repository} sort:created-desc"
+		}
+	],
+	"githubPullRequests.queries": [
+		{
+			"label": "Created By Me",
+			"query": "author:${user}"
+		},
+		{
+			"label": "All"
+		}
+	],
+	"gitlens.advanced.messages": {
+		"suppressCreatePullRequestPrompt": true
+	},
+	"gitlens.codeLens.scopes": [
+		"document"
+	],
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.heatmap.ageThreshold": 10,
+	"workbench.settings.editor": "json",
+	"zenMode.hideLineNumbers": false,
+	"zenMode.hideTabs": false,
+	"screencastMode.onlyKeyboardShortcuts": true,
+	"window.autoDetectHighContrast": false,
+	"workbench.colorTheme": "Azulis",
+	"extensions.ignoreRecommendations": true,
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false,
+	"livePreview.portNumber": 8000,
+	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 1,
+	"liveServer.settings.port": 8000,
+	"liveServer.settings.host": "localhost",
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	}
+}
