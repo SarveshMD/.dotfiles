@@ -1,4 +1,5 @@
 # My Personal Dotfiles Repository
+<!-- markdownlint-disable MD033 -->
 
 ## Set things up
 
@@ -21,8 +22,7 @@
 - .zshrc
 - links -dir
 - .CustomResources -dir
-  <!-- markdownlint-disable-next-line MD033 -->
-  - <p>compile.py</p>
+  - <span>compile.py</span>
 - vscode -dir
   - snippets -dir
     - python.json
