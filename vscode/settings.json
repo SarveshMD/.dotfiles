@@ -82,7 +82,7 @@
 	"zenMode.hideTabs": false,
 	"screencastMode.onlyKeyboardShortcuts": true,
 	"window.autoDetectHighContrast": false,
-	"workbench.colorTheme": "Azulis",
+	"workbench.colorTheme": "monokai-charcoal",
 	"extensions.ignoreRecommendations": true,
 	"telemetry.enableTelemetry": false,
 	"telemetry.enableCrashReporter": false,
