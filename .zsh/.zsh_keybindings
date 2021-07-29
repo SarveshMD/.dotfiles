@@ -1,0 +1,4 @@
+# Custom ZSH keybindings
+bindkey '^ ' autosuggest-accept       # ctrl space
+bindkey '\e[1;5C' forward-word        # ctrl right
+bindkey '\e[1;5D' backward-word       # ctrl left

@@ -1,0 +1,21 @@
+# Custom Aliases
+alias l='echo Running ls -lFh; ls -lFh --color=auto'
+alias la='echo Running ls -laFh; ls -laFh --color=auto'
+alias ls='ls --color=auto'
+alias grep='grep --color'
+alias zshrc="echo 'Running nano ~/.zshrc'; nano ~/.zshrc"
+alias c="clear"
+alias gst="echo 'Running git status'; git status"
+alias glo="echo 'Running git log --oneline'; git log --oneline"
+alias gl="echo 'Running git log'; git log"
+alias gb="echo 'Running git branch'; git branch"
+alias gs="echo 'Running git switch'; git switch"
+alias apache="echo 'Running sudo /etc/init.d/apache2'; sudo /etc/init.d/apache2"
+alias apache-live="echo 'Running sudo tail -f /var/log/apache2/access.log' sudo tail -f /var/log/apache2/access.log"
+alias python3="python3.8"
+alias t="todo.sh"
+alias tree="tree -C"
+alias cpout="xclip -sel clip"
+alias comp="python3 ~/.CustomResources/compile.py"
+alias cputemp='float cpu_temp="$(</sys/class/thermal/thermal_zone0/temp) / 1000"; printf "%.2f\n" "$cpu_temp"; unset cpu_temp'
+alias emoji="source ~/.CustomResources/emoji.sh"
