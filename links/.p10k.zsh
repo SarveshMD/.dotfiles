@@ -1,1 +1,0 @@
-/home/sarvesh/.dotfiles/.p10k.zsh

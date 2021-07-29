@@ -80,6 +80,13 @@ your GPG Key ID in this command too.
     - python.json
   - keybindings.json
   - settings.json
+- .zsh
+  - powerlevel10k -dir
+  - zsh-autosuggestions -dir
+  - zsh-syntax-highlighting dir
+  - .p10k.zsh
+  - .zsh_aliases
+  - .zsh_keybindings
 - .fonts -dir
   - .uuid
   - MesloLGS NF Regular.ttf
@@ -113,3 +120,8 @@ your GPG Key ID in this command too.
     - SourceCodePro-Regular.ttf
     - SourceCodePro-SemiBold.ttf
     - SourceCodePro-SemiBoldItalic.ttf
+
+## Credits
+[.zsh/powerlevel10k](https://github.com/romkatv/powerlevel10k) - [romkatv](https://github.com/romkatv)
+[.zsh/zsh-autosuggestions](https://github.com/zsh-users) - [zsh-users](https://github.com/zsh-users/zsh-autosuggestions)
+[.zsh/zsh-syntax-highlighting](https://github.com/zsh-users) - [zsh-users](https://github.com/zsh-users/zsh-syntax-highlighting)
