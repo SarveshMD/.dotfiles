@@ -1,6 +1,5 @@
 {
 	"security.workspace.trust.untrustedFiles": "open",
-	"workbench.iconTheme": "material-icon-theme",
 	"window.closeWhenEmpty": false,
 	"editor.detectIndentation": true,
 	"editor.dragAndDrop": true,
@@ -83,6 +82,7 @@
 	"screencastMode.onlyKeyboardShortcuts": true,
 	"window.autoDetectHighContrast": false,
 	"workbench.colorTheme": "monokai-charcoal (purple)",
+	"workbench.iconTheme": "material-icon-theme",
 	"extensions.ignoreRecommendations": true,
 	"telemetry.enableTelemetry": false,
 	"telemetry.enableCrashReporter": false,
@@ -96,5 +96,16 @@
 		"default": "right",
 		"jupyter-notebook": "left"
 	},
-	"editor.cursorBlinking": "expand"
+	"editor.cursorBlinking": "expand",
+	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	"bracket-pair-colorizer-2.colors": [
+		"#00eeff",
+		"#e100ff",
+		"#1fcf45",
+		"#cf0056",
+		"#ffac3e",
+		"#ff7a7a",
+		"#e5ff00",
+	],
+	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
 }
