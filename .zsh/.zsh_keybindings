@@ -2,3 +2,5 @@
 bindkey '^ ' autosuggest-accept       # ctrl space
 bindkey '\e[1;5C' forward-word        # ctrl right
 bindkey '\e[1;5D' backward-word       # ctrl left
+bindkey '^H' backward-kill-word       # ctrl backspace
+bindkey '5~' kill-word                # ctrl delete
