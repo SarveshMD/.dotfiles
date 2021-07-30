@@ -1,3 +1,5 @@
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
+
 # My Personal Dotfiles Repository
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD032 -->
