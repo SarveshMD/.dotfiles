@@ -14,7 +14,7 @@
 7) Cut the `snippets` folder, `keybindings.json` and `settings.json` files.
 8) Navigate to `.config/Code/User` and paste them.
 9) Run `fc-cache -fv` to update the font cache.
-10) Run `fc-list -fv | grep Cascadia` to verify if the fonts are properly recognized.
+10) Run `fc-list | grep Cascadia` to verify if the fonts are properly recognized.
 
 ## Setup Git SSH Key ([Source](https://www.youtube.com/watch?v=WgZIv5HI44o))
 
