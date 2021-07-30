@@ -24,7 +24,7 @@
 4) Run `ssh-add ~/.ssh/id_rsa`.
 5) Run `cat ~/.ssh/id_rsa.pub` and copy the output.
 6) Go to [https://github.com/settings/keys](https://github.com/settings/keys).
-7) Click on `New SSH Key`, give your SSh Key a title and paste in the SSH Key and click `Add SSH Key`.
+7) Click on `New SSH Key`, give your SSH Key a title and paste in the SSH Key and click `Add SSH Key`.
 8) Enter your password and you're done !
 
 ## Setup Git GPG Key ([Source](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification))
