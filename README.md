@@ -125,5 +125,5 @@ your GPG Key ID in this command too.
 
 ## Credits
 [.zsh/powerlevel10k](https://github.com/romkatv/powerlevel10k) - [romkatv](https://github.com/romkatv)  
-[.zsh/zsh-autosuggestions](https://github.com/zsh-users) - [zsh-users](https://github.com/zsh-users/zsh-autosuggestions)  
-[.zsh/zsh-syntax-highlighting](https://github.com/zsh-users) - [zsh-users](https://github.com/zsh-users/zsh-syntax-highlighting)  
+[.zsh/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - [zsh-users](https://github.com/zsh-users)  
+[.zsh/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - [zsh-users](https://github.com/zsh-users)
