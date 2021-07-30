@@ -75,6 +75,8 @@ your GPG Key ID in this command too.
 - links -dir
 - .CustomResources -dir
   - <span>compile.py</span>
+  - <span>backup.py</span>
+  - <span>emoji.sh</span>
 - vscode -dir
   - snippets -dir
     - python.json

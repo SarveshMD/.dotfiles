@@ -16,6 +16,7 @@ alias python3="python3.8"
 alias t="todo.sh"
 alias tree="tree -C"
 alias cpout="xclip -sel clip"
-alias comp="python3 ~/.CustomResources/compile.py"
 alias cputemp='float cpu_temp="$(</sys/class/thermal/thermal_zone0/temp) / 1000"; printf "%.2f\n" "$cpu_temp"; unset cpu_temp'
 alias emoji="source ~/.CustomResources/emoji.sh"
+alias comp="python3 ~/.CustomResources/compile.py"
+alias bkp="python3 ~/.CustomResources/backup.py"
