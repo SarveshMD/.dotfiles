@@ -19,11 +19,12 @@
 	"editor.occurrencesHighlight": false,
 	"window.restoreWindows": "preserve",
 	"python.languageServer": "Pylance",
-	// "editor.defaultFormatter": "esbenp.prettier-vscode",
-	// "prettier.printWidth": 10000,
-	// "prettier.useTabs": true,
-	// "prettier.tabWidth": 4,
-	// "prettier.trailingComma": "all",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.printWidth": 10000,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"prettier.trailingComma": "all",
 	"explorer.confirmDelete": false,
 	"zenMode.restore": false,
 	"editor.cursorStyle": "line",
@@ -71,9 +72,7 @@
 	"gitlens.advanced.messages": {
 		"suppressCreatePullRequestPrompt": true
 	},
-	"gitlens.codeLens.scopes": [
-		"document"
-	],
+	"gitlens.codeLens.scopes": ["document"],
 	"gitlens.hovers.currentLine.over": "line",
 	"gitlens.heatmap.ageThreshold": 10,
 	"workbench.settings.editor": "json",
@@ -81,7 +80,7 @@
 	"zenMode.hideTabs": false,
 	"screencastMode.onlyKeyboardShortcuts": true,
 	"window.autoDetectHighContrast": false,
-	"workbench.colorTheme": "monokai-charcoal (purple)",
+	"workbench.colorTheme": "monokai-charcoal (green)",
 	"workbench.iconTheme": "material-icon-theme",
 	"extensions.ignoreRecommendations": true,
 	"telemetry.enableTelemetry": false,
@@ -98,14 +97,6 @@
 	},
 	"editor.cursorBlinking": "expand",
 	"bracket-pair-colorizer-2.showBracketsInGutter": true,
-	"bracket-pair-colorizer-2.colors": [
-		"#00eeff",
-		"#e100ff",
-		"#1fcf45",
-		"#cf0056",
-		"#ffac3e",
-		"#ff7a7a",
-		"#e5ff00",
-	],
-	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+	"bracket-pair-colorizer-2.colors": ["#e100ff", "#00eeff", "#1fcf45", "#cf0056", "#ffac3e", "#ff7a7a", "#e5ff00"],
+	"livePreview.notifyOnOpenLooseFile": false
 }

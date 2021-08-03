@@ -121,19 +121,19 @@
 		"when": "!editorFocus"
 	},
 	{
-		"key": "ctrl+s",
+		"key": "ctrl+k s",
 		"command": "workbench.action.files.saveWithoutFormatting"
 	},
 	{
-		"key": "ctrl+k s",
+		"key": "ctrl+s",
 		"command": "-workbench.action.files.saveWithoutFormatting"
 	},
 	{
-		"key": "ctrl+k s",
+		"key": "ctrl+s",
 		"command": "workbench.action.files.save"
 	},
 	{
-		"key": "ctrl+s",
+		"key": "ctrl+k s",
 		"command": "-workbench.action.files.save"
 	},
 	{
@@ -144,5 +144,35 @@
 		"key": "ctrl+r",
 		"command": "-workbench.action.reloadWindow",
 		"when": "isDevelopment"
+	},
+	{
+		"key": "ctrl+shift+9",
+		"command": "editor.fold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+[",
+		"command": "-editor.fold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+0",
+		"command": "editor.unfold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+]",
+		"command": "-editor.unfold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+]",
+		"command": "editor.emmet.action.balanceIn",
+		"when": "editorFocus && editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+[",
+		"command": "editor.emmet.action.balanceOut",
+		"when": "editorFocus && editorTextFocus"
 	}
 ]
