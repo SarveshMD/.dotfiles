@@ -8,14 +8,17 @@
 
 1) Open Terminal and navigate to the home `"~"` directory.
 2) Run `git clone https://github.com/SarveshMD/.dotfiles`.
-3) Open the file explorer
-4) Navigate to `.dotfiles/links` directory.
-5) Copy all the items and paste them into the home `"~"` directory.
-6) Navigate to the home directory
-7) Cut the `snippets` folder, `keybindings.json` and `settings.json` files.
-8) Navigate to `.config/Code/User` and paste them.
-9) Run `fc-cache -fv` to update the font cache.
-10) Run `fc-list | grep Cascadia` to verify if the fonts are properly recognized.
+3) If a good internet connection is available, clone the dependencies.
+   1) Run `git submodule init`. You should get output with the names of the dependencies.
+   2) Run `git submodule update` to clone the dependencies.
+5) Open the file explorer.
+6) Navigate to `.dotfiles/links` directory.
+7) Copy all the items and paste them into the home `"~"` directory.
+8) Navigate to the home directory
+9) Cut the `snippets` folder, `keybindings.json` and `settings.json` files.
+10) Navigate to `.config/Code/User` and paste them.
+11) Run `fc-cache -fv` to update the font cache.
+12) Run `fc-list | grep Cascadia` to verify if the fonts are properly recognized.
 
 ## Setup Git SSH Key ([Source](https://www.youtube.com/watch?v=WgZIv5HI44o))
 
