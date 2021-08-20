@@ -7,3 +7,6 @@
 [submodule ".zsh/zsh-autosuggestions"]
 	path = .zsh/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions
+[submodule "submodules/rtl8188fu"]
+	path = submodules/rtl8188fu
+	url = git@github.com:kelebek333/rtl8188fu
