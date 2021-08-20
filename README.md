@@ -8,9 +8,11 @@
 
 1) Open Terminal and navigate to the home `"~"` directory.
 2) Run `git clone https://github.com/SarveshMD/.dotfiles`.
-3) If a good internet connection is available, clone the dependencies.
-   1) Run `git submodule init`. You should get output with the names of the dependencies.
-   2) Run `git submodule update` to clone the dependencies.
+3) If a good internet connection is available, clone the submodules.
+   1) Run `git submodule init`. You should get output with the names of the submodules.
+   2) Run `git submodule update` to clone the submodules.
+   3) If the submodules are outdated, run `git submodule update --remote` to clone their latest versions.
+   4) If there are changes after cloning the latest versions, commit them and push them.
 5) Open the file explorer.
 6) Navigate to `.dotfiles/links` directory.
 7) Copy all the items and paste them into the home `"~"` directory.
