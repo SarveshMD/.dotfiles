@@ -15,10 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Commands
+export PATH="$HOME/.local/bin:$PATH"
 setopt appendhistory
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
+ZSH_AUTOSUGGEST_HISTORY_IGNORE="(youtube-dl *|curl *| wget *|rm *|cd *)"
 
 # Load; should be last.
 source ~/.zsh/.zsh_aliases
