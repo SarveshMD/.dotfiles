@@ -10,3 +10,9 @@
 [submodule "submodules/rtl8188fu"]
 	path = submodules/rtl8188fu
 	url = git@github.com:kelebek333/rtl8188fu
+[submodule ".vim/plugged/fzf"]
+	path = .vim/plugged/fzf
+	url = git@github.com:junegunn/fzf
+[submodule ".vim/plugged/gruvbox"]
+	path = .vim/plugged/gruvbox
+	url = git@github.com:gruvbox-community/gruvbox
