@@ -8,3 +8,5 @@
 	gpgsign = true
 [advice]
 	detachedHead = false
+[core]
+	editor = vim
