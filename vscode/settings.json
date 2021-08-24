@@ -6,6 +6,7 @@
 	"workbench.editor.highlightModifiedTabs": true,
 	"editor.fontSize": 18,
 	"editor.fontFamily": "Cascadia Code, Operator Mono, Source Code Pro",
+	"editor.fontLigatures": true,
 	"editor.fontWeight": "400",
 	"explorer.sortOrder": "default",
 	"window.openFilesInNewWindow": "off",
