@@ -16,3 +16,6 @@
 [submodule ".vim/plugged/gruvbox"]
 	path = .vim/plugged/gruvbox
 	url = git@github.com:gruvbox-community/gruvbox
+[submodule ".vim/plugged/lightline.vim"]
+	path = .vim/plugged/lightline.vim
+	url = git@github.com:itchyny/lightline.vim
