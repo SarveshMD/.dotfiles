@@ -21,7 +21,10 @@ set cursorline
 set history=1000
 set laststatus=2
 set ttimeout ttimeoutlen=50
+set clipboard=unnamedplus
+set backspace=indent,eol,start
 
+nmap <space> :FZF<CR>
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -34,4 +37,6 @@ let g:lightline = {
     \ 'colorscheme': 'selenized_black'
     \ }
 let gruvbox_contrast_dark = 'hard'
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 colorscheme gruvbox
