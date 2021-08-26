@@ -16,5 +16,5 @@ if not path.exists(bkpPath):
     system(f"mkdir {bkpPath}")
     print(f"Created directory {bkpPath}")
 
-system(f"cp {bkpFile} {bkpPath}/{bkpFile}")
-print(f"Copied {bkpFile} to {bkpPath}/{bkpFile}")
+system(f"cp {bkpFile} {bkpPath}/{bkpFile}.bak")
+print(f"Copied {bkpFile} to {bkpPath}/{bkpFile}.bak")
