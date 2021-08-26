@@ -19,3 +19,6 @@
 [submodule ".vim/plugged/lightline.vim"]
 	path = .vim/plugged/lightline.vim
 	url = git@github.com:itchyny/lightline.vim
+[submodule ".vim/plugged/fzf.vim"]
+	path = .vim/plugged/fzf.vim
+	url = git@github.com:junegunn/fzf.vim
