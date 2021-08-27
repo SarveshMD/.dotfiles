@@ -36,5 +36,5 @@ call plug#end()
 let g:lightline = {'colorscheme': 'selenized_black'}
 let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --ignore ".git" --ignore "*.swp" --hidden -g ""'
 colorscheme gruvbox
