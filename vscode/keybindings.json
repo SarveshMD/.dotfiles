@@ -174,5 +174,9 @@
 		"key": "ctrl+shift+[",
 		"command": "editor.emmet.action.balanceOut",
 		"when": "editorFocus && editorTextFocus"
+	},
+	{
+		"key": "ctrl+k shift+v",
+		"command": "toggleVim"
 	}
 ]
