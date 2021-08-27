@@ -22,3 +22,6 @@
 [submodule ".vim/plugged/fzf.vim"]
 	path = .vim/plugged/fzf.vim
 	url = git@github.com:junegunn/fzf.vim
+[submodule ".vim/plugged/YouCompleteMe"]
+	path = .vim/plugged/YouCompleteMe
+	url = git@github.com:ycm-core/YouCompleteMe
