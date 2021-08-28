@@ -39,9 +39,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
 Plug 'junegunn/fzf.vim'                             " fzf
 Plug 'itchyny/lightline.vim'                        " statusline
 Plug 'tpope/vim-fugitive'                           " git integration
+Plug 'airblade/vim-gitgutter'                       " git gutter
 Plug 'ycm-core/YouCompleteMe'                       " autocomplete and language support
+Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
-Plug 'preservim/nerdcommenter'                      " commenter
+Plug 'tpope/vim-commentary'                         " commenter
 Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
 
