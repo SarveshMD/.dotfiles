@@ -15,12 +15,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Commands
 export PATH="$HOME/.local/bin:$PATH"
+export FZF_DEFAULT_COMMAND="ag --ignore '.git' --ignore '*.swp' --hidden -g ''"
 setopt appendhistory
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 ZSH_AUTOSUGGEST_HISTORY_IGNORE="(youtube-dl *|curl *| wget *|rm *|cd *|chmod *|apt *|pip *|pip3 *| *|)"
-
 # Load; should be last.
 source ~/.zsh/.zsh_aliases
 source ~/.zsh/.zsh_keybindings
