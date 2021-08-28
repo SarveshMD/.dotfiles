@@ -25,12 +25,14 @@ set ttimeout ttimeoutlen=50
 set clipboard=unnamedplus
 set backspace=indent,eol,start
 set nocompatible
+
 filetype plugin on
 syntax on
 
 nmap <C-p> :FZF<CR>
 nmap <C-t> :tabedit .<CR>
 nmap <C-w> :wq<CR>
+
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
 Plug 'kaicataldo/material.vim'                      " colorscheme
