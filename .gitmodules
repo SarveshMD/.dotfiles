@@ -25,3 +25,18 @@
 [submodule ".vim/plugged/YouCompleteMe"]
 	path = .vim/plugged/YouCompleteMe
 	url = git@github.com:ycm-core/YouCompleteMe
+[submodule ".vim/plugged/material.vim"]
+	path = .vim/plugged/material.vim
+	url = git@github.com:kaicataldo/material.vim
+[submodule ".vim/plugged/dracula"]
+	path = .vim/plugged/dracula
+	url = git@github.com:dracula/vim
+[submodule ".vim/plugged/nerdtree"]
+	path = .vim/plugged/nerdtree
+	url = git@github.com:preservim/nerdtree
+[submodule ".vim/plugged/nerdcommenter"]
+	path = .vim/plugged/nerdcommenter
+	url = git@github.com:preservim/nerdcommenter
+[submodule ".vim/plugged/vimwiki"]
+	path = .vim/plugged/vimwiki
+	url = git@github.com:vimwiki/vimwiki

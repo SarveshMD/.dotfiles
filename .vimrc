@@ -23,14 +23,22 @@ set laststatus=2
 set ttimeout ttimeoutlen=50
 set clipboard=unnamedplus
 set backspace=indent,eol,start
+set nocompatible
+filetype plugin on
+syntax on
 
-nmap ,<space> :FZF<CR>
+nmap <C-p> :FZF<CR>
 call plug#begin()
-Plug 'gruvbox-community/gruvbox'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'gruvbox-community/gruvbox'                    " colorscheme
+Plug 'kaicataldo/material.vim'                      " colorscheme
+Plug 'dracula/vim', { 'as': 'dracula' }            " colorscheme
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
+Plug 'junegunn/fzf.vim'                             " fzf
+Plug 'itchyny/lightline.vim'                        " statusline
+Plug 'ycm-core/YouCompleteMe'                       " autocomplete and language support
+Plug 'preservim/nerdtree'                           " file tree
+Plug 'preservim/nerdcommenter'                      " commenter
+Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
 
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
