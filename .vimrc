@@ -5,6 +5,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 set termguicolors
+set background=dark
 set tabstop=4 softtabstop=4
 set noexpandtab
 set shiftwidth=4
@@ -28,13 +29,16 @@ filetype plugin on
 syntax on
 
 nmap <C-p> :FZF<CR>
+nmap <C-t> :tabedit .<CR>
+nmap <C-w> :wq<CR>
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
 Plug 'kaicataldo/material.vim'                      " colorscheme
-Plug 'dracula/vim', { 'as': 'dracula' }            " colorscheme
+Plug 'dracula/vim', { 'as': 'dracula' }             " colorscheme
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
 Plug 'junegunn/fzf.vim'                             " fzf
 Plug 'itchyny/lightline.vim'                        " statusline
+Plug 'tpope/vim-fugitive'                           " git integration
 Plug 'ycm-core/YouCompleteMe'                       " autocomplete and language support
 Plug 'preservim/nerdtree'                           " file tree
 Plug 'preservim/nerdcommenter'                      " commenter
@@ -42,7 +46,15 @@ Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
 
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
-let g:lightline = {'colorscheme': 'selenized_black'}
+let g:lightline = {
+          \ 'active': {
+          \   'left': [ [ 'mode', 'paste' ],
+          \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+          \ },
+          \ 'component_function': {
+          \   'gitbranch': 'FugitiveHead'
+          \ },
+      \ }
 let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
 colorscheme gruvbox

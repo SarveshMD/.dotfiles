@@ -40,3 +40,6 @@
 [submodule ".vim/plugged/vimwiki"]
 	path = .vim/plugged/vimwiki
 	url = git@github.com:vimwiki/vimwiki
+[submodule ".vim/plugged/vim-fugitive"]
+	path = .vim/plugged/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive
