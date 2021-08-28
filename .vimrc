@@ -42,6 +42,7 @@ Plug 'junegunn/fzf.vim'                             " fuzzy file finder
 Plug 'itchyny/lightline.vim'                        " statusline
 Plug 'tpope/vim-fugitive'                           " git integration
 Plug 'airblade/vim-gitgutter'                       " git gutter
+Plug 'davidhalter/jedi-vim'                         " autocomplete
 Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
 Plug 'tpope/vim-commentary'                         " commenter
