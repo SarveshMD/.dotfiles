@@ -34,9 +34,16 @@ set nocompatible
 filetype plugin on
 syntax on
 
-nmap <C-p> :FZF<CR>
-nmap <C-t> :tabedit .<CR>
-nmap <leader>gs :G<CR>
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-t> :tabedit .<CR>
+nnoremap <leader>gs :G<CR>
+nnoremap <leader>ga :Git add %<CR>
+nnoremap <leader>gA :Git add .<CR>
+nnoremap <leader>gd :Git diff HEAD<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gp :Git push<CR>
+nnoremap <tab> :tabn<CR>
+nnoremap <S-tab> :tabp<CR>
 
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
