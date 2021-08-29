@@ -27,6 +27,7 @@ set noshowmode
 set cursorline
 set history=1000
 set laststatus=2
+set clipboard=unnamedplus
 set ttimeout ttimeoutlen=50
 set backspace=indent,eol,start
 set nocompatible
