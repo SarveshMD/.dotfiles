@@ -39,7 +39,7 @@ syntax on
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
-nnoremap <C-w> :tabc<CR>
+nnoremap <leader>tc :tabc<CR>
 nnoremap <tab> :tabn<CR>
 nnoremap <S-tab> :tabp<CR>
 nnoremap <leader>gs :G<CR>
@@ -62,9 +62,9 @@ Plug 'davidhalter/jedi-vim'                         " autocomplete
 Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                  " git status in nerdtree
-Plug 'ryanoasis/vim-devicons'                       " file icons
 Plug 'tpope/vim-commentary'                         " commenter
 Plug 'vimwiki/vimwiki'                              " notes
+Plug 'ryanoasis/vim-devicons'                       " file icons
 call plug#end()
 
 
@@ -82,5 +82,6 @@ let g:lightline = {
       \ }
 let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
+let NERDTreeIgnore=['\.swp', '\~$']
 let mapleader = " "
 colorscheme gruvbox
