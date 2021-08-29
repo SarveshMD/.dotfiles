@@ -31,20 +31,23 @@ set clipboard=unnamedplus
 set ttimeout ttimeoutlen=50
 set backspace=indent,eol,start
 set nocompatible
+set textwidth=0
 
 filetype plugin on
 syntax on
 
 nnoremap <C-p> :FZF<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
+nnoremap <C-w> :tabc<CR>
+nnoremap <tab> :tabn<CR>
+nnoremap <S-tab> :tabp<CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>ga :Git add %<CR>
 nnoremap <leader>gA :Git add .<CR>
 nnoremap <leader>gd :Git diff HEAD<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
-nnoremap <tab> :tabn<CR>
-nnoremap <S-tab> :tabp<CR>
 
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
@@ -58,6 +61,7 @@ Plug 'airblade/vim-gitgutter'                       " git gutter
 Plug 'davidhalter/jedi-vim'                         " autocomplete
 Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
+Plug 'Xuyuanp/nerdtree-git-plugin'                  " git status in nerdtree
 Plug 'tpope/vim-commentary'                         " commenter
 Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
