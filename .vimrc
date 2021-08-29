@@ -62,6 +62,7 @@ Plug 'davidhalter/jedi-vim'                         " autocomplete
 Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                  " git status in nerdtree
+Plug 'ryanoasis/vim-devicons'                       " file icons
 Plug 'tpope/vim-commentary'                         " commenter
 Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
