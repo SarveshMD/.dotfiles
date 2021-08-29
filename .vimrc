@@ -7,22 +7,27 @@ endif
 set termguicolors
 set background=dark
 set tabstop=4 softtabstop=4
-set noexpandtab
+set expandtab
 set shiftwidth=4
 set expandtab
 set number
+set relativenumber
 set nowrap
+set noerrorbells
 set smartindent
+set smartcase
+set ignorecase
 set autoindent
 set incsearch
+set scroll=5
 set scrolloff=5
 set sidescrolloff=5
+set sidescroll=1
 set noshowmode
 set cursorline
 set history=1000
 set laststatus=2
 set ttimeout ttimeoutlen=50
-set clipboard=unnamedplus
 set backspace=indent,eol,start
 set nocompatible
 
@@ -31,7 +36,7 @@ syntax on
 
 nmap <C-p> :FZF<CR>
 nmap <C-t> :tabedit .<CR>
-nmap <C-w> :wq<CR>
+nmap <leader>gs :G<CR>
 
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
@@ -49,6 +54,8 @@ Plug 'tpope/vim-commentary'                         " commenter
 Plug 'vimwiki/vimwiki'                              " notes
 call plug#end()
 
+
+
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
 let g:lightline = {
           \ 'colorscheme': 'one',
@@ -62,4 +69,5 @@ let g:lightline = {
       \ }
 let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
+let mapleader = " "
 colorscheme gruvbox
