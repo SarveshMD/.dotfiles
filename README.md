@@ -13,6 +13,7 @@
    2) Run `git submodule update` to clone the submodules.
    3) If the submodules are outdated, run `git submodule update --remote` to clone their latest versions.
    4) If there are changes after cloning the latest versions, commit them and push them.
+4) Run the install script (or) skip this step
 5) Open the file explorer.
 6) Navigate to `.dotfiles/links` directory.
 7) Copy all the items and paste them into the home `"~"` directory.
@@ -70,66 +71,3 @@ this command
 15) Run `git config --global user.signingkey 3AA5C34371567BD2`, make sure you substitute
 your GPG Key ID in this command too.
 16) Run `git config --global commit.gpgsign true` to sign all your future commits automatically.
-
-## Contents
-
-- <span>README.md</span>
-- .gitconfig
-- .p10k.zsh
-- .selected_editor
-- .zshrc
-- links -dir
-- .CustomResources -dir
-  - <span>compile.py</span>
-  - <span>backup.py</span>
-  - <span>emoji.sh</span>
-- vscode -dir
-  - snippets -dir
-    - python.json
-  - keybindings.json
-  - settings.json
-- .zsh
-  - powerlevel10k -dir
-  - zsh-autosuggestions -dir
-  - zsh-syntax-highlighting dir
-  - .p10k.zsh
-  - .zsh_aliases
-  - .zsh_keybindings
-- .fonts -dir
-  - .uuid
-  - MesloLGS NF Regular.ttf
-  - Cascadia_Code -dir
-    - .uuid
-    - CascadiaCode.ttf
-    - CascadiaCodeItalic.ttf
-    - CascadiaCodePL.ttf
-    - CascadiaCodePLItalic.ttf
-    - CascadiaMono.ttf
-    - CascadiaMonoItalic.ttf
-    - CascadiaMonoPL.ttf
-    - CascadiaMonoPLItalic.ttf
-  - Operator_Mono -dir
-    - .uuid
-    - OperatorMono-Book.ttf
-    - OperatorMono-Medium.ttf
-  - Source_Code_Pro -dir
-    - .uuid
-    - SourceCodePro-Black.ttf
-    - SourceCodePro-BlackItalic.ttf
-    - SourceCodePro-Bold.ttf
-    - SourceCodePro-BoldItalic.ttf
-    - SourceCodePro-ExtraLight.ttf
-    - SourceCodePro-ExtraLightItalic.ttf
-    - SourceCodePro-Italic.ttf
-    - SourceCodePro-Light.ttf
-    - SourceCodePro-LightItalic.ttf
-    - SourceCodePro-Medium.ttf
-    - SourceCodePro-MediumItalic.ttf
-    - SourceCodePro-Regular.ttf
-    - SourceCodePro-SemiBold.ttf
-    - SourceCodePro-SemiBoldItalic.ttf
-
-## Credits
-[.zsh/powerlevel10k](https://github.com/romkatv/powerlevel10k) - [romkatv](https://github.com/romkatv)  
-[.zsh/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - [zsh-users](https://github.com/zsh-users)  
-[.zsh/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - [zsh-users](https://github.com/zsh-users)
