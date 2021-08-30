@@ -37,7 +37,8 @@ filetype plugin on
 syntax on
 
 nnoremap <C-p> :FZF<CR>
-nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeFocus<CR>
+autocmd FileType nerdtree nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
 nnoremap <leader>tc :tabc<CR>
 nnoremap <tab> :tabn<CR>
@@ -74,14 +75,16 @@ let g:lightline = {
           \ 'colorscheme': 'one',
           \ 'active': {
           \   'left': [ [ 'mode', 'paste' ],
-          \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+          \             [ 'gitbranchicon', 'gitbranch', 'readonly', 'filename', 'modified' ] ]
           \ },
           \ 'component_function': {
-          \   'gitbranch': 'FugitiveHead'
+          \   'gitbranch': 'FugitiveHead',
+          \   'gitbranchicon': '',
           \ },
       \ }
 let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
 let NERDTreeIgnore=['\.swp', '\~$']
+let NERDTreeShowHidden=1
 let mapleader = " "
 colorscheme gruvbox
