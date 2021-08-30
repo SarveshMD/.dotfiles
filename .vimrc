@@ -38,7 +38,6 @@ syntax on
 
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-b> :NERDTreeFocus<CR>
-autocmd FileType nerdtree nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
 nnoremap <leader>tc :tabc<CR>
 nnoremap <tab> :tabn<CR>
@@ -68,18 +67,19 @@ Plug 'vimwiki/vimwiki'                              " notes
 Plug 'ryanoasis/vim-devicons'                       " file icons
 call plug#end()
 
-
+function! GitBranch() 
+    return " " . FugitiveHead()
+endfunction
 
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
 let g:lightline = {
           \ 'colorscheme': 'one',
           \ 'active': {
           \   'left': [ [ 'mode', 'paste' ],
-          \             [ 'gitbranchicon', 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+          \             ['gitbranch', 'readonly', 'filename', 'modified' ] ]
           \ },
           \ 'component_function': {
-          \   'gitbranch': 'FugitiveHead',
-          \   'gitbranchicon': '',
+          \   'gitbranch': 'GitBranch',
           \ },
       \ }
 let gruvbox_contrast_dark = 'hard'
