@@ -77,7 +77,7 @@ set nocompatible
 set textwidth=0
 
 nnoremap <C-p> :FZF<CR>
-nnoremap <C-b> :NERDTreeFocus<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
 nnoremap <leader>tc :tabc<CR>
 nnoremap <tab> :tabn<CR>
