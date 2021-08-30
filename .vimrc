@@ -8,7 +8,7 @@ call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
 Plug 'kaicataldo/material.vim'                      " colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }             " colorscheme
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file finder 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file finder
 Plug 'junegunn/fzf.vim'                             " fuzzy file finder
 Plug 'itchyny/lightline.vim'                        " statusline
 Plug 'tpope/vim-fugitive'                           " git integration
@@ -22,7 +22,7 @@ Plug 'vimwiki/vimwiki'                              " notes
 Plug 'ryanoasis/vim-devicons'                       " file icons
 call plug#end()
 
-function! GitBranch() 
+function! GitBranch()
     return " " . FugitiveHead()
 endfunction
 
@@ -38,14 +38,15 @@ let g:lightline = {
           \ },
       \ }
 let gruvbox_contrast_dark = 'hard'
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9, 'highlight': 'Todo', 'border': 'sharp' } }
-let NERDTreeIgnore=['\.swp', '\~$']
+let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.8, 'highlight': 'Todo', 'border': 'rounded' } }
+let NERDTreeIgnore=['.git', '\.swp', '\~$']
 let NERDTreeShowHidden=1
 let mapleader = " "
 
 filetype plugin on
 syntax on
 colorscheme gruvbox
+autocmd BufWritePre * :%s/\s\+$//e
 
 set termguicolors
 set background=dark
@@ -64,8 +65,8 @@ set autoindent
 set incsearch
 set scroll=5
 set scrolloff=5
-set sidescrolloff=5
 set sidescroll=1
+set sidescrolloff=5
 set noshowmode
 set cursorline
 set history=1000

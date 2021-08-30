@@ -21,6 +21,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 ZSH_AUTOSUGGEST_HISTORY_IGNORE="(youtube-dl *|curl *| wget *|rm *|cd *|chmod *|apt *|pip *|pip3 *| *|)"
+
 # Load; should be last.
 source ~/.zsh/.zsh_aliases
 source ~/.zsh/.zsh_keybindings
