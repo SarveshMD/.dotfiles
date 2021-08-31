@@ -23,7 +23,11 @@ Plug 'ryanoasis/vim-devicons'                       " file icons
 call plug#end()
 
 function! GitBranch()
-    return " " . FugitiveHead()
+    if system('git rev-parse --is-inside-work-tree') == "true\n"
+        return " " . FugitiveHead()
+    else
+        return ""
+    endif
 endfunction
 
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
@@ -80,12 +84,10 @@ set textwidth=0
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
-nnoremap <leader>tc :tabc<CR>
-nnoremap <tab> :tabn<CR>
-nnoremap <S-tab> :tabp<CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>ga :Git add %<CR>
 nnoremap <leader>gA :Git add .<CR>
 nnoremap <leader>gd :Git diff HEAD<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
+" TODO: Add home and end keymaps in insert mode
