@@ -86,7 +86,6 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-t> :tabedit .<CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>ga :Git add %<CR>
-nnoremap <leader>gA :Git add .<CR>
 nnoremap <leader>gd :Git diff HEAD<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
