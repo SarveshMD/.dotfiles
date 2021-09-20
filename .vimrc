@@ -22,23 +22,12 @@ Plug 'vimwiki/vimwiki'                              " notes
 Plug 'ryanoasis/vim-devicons'                       " file icons
 call plug#end()
 
-function! GitBranch()
-    if system('git rev-parse --is-inside-work-tree') == "true\n"
-        return " " . FugitiveHead()
-    else
-        return ""
-    endif
-endfunction
-
 " List of my favorite lightline colorschemes: selenized_black, one, wombat, deus, dracula
 let g:lightline = {
           \ 'colorscheme': 'one',
           \ 'active': {
           \   'left': [ [ 'mode', 'paste' ],
-          \             ['gitbranch', 'readonly', 'filename', 'modified' ] ]
-          \ },
-          \ 'component_function': {
-          \   'gitbranch': 'GitBranch',
+          \             ['FugitiveHead', 'readonly', 'filename', 'modified' ] ]
           \ },
       \ }
 let gruvbox_contrast_dark = 'hard'
