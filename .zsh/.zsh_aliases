@@ -4,6 +4,8 @@ alias la='echo Running ls -laFh; ls -laFh --color=auto'
 alias c="clear"
 alias ls='ls --color=auto'
 alias grep='grep --color'
+
+# Git Aliases
 alias gs="echo 'Running git status'; git status"
 alias gl="echo 'Running git log'; git log"
 alias glo="echo 'Running git log --oneline'; git log --oneline"
@@ -14,6 +16,9 @@ alias gps="echo 'Running git push'; git push"
 alias gpl="echo 'Running git pull'; git pull"
 alias gra="echo 'Running git remote add origin'; git remote add origin"
 alias grv="echo 'Running git remote -v'; git remote -v"
+alias ga="echo 'Running git add'; git add"
+alias gc="echo 'Running git commit -m'; git commit -m"
+
 alias apache="echo 'Running sudo /etc/init.d/apache2'; sudo /etc/init.d/apache2"
 alias apache-live="echo 'Running sudo tail -f /var/log/apache2/access.log' sudo tail -f /var/log/apache2/access.log"
 alias t="todo.sh"
