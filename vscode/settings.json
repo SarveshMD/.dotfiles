@@ -81,7 +81,7 @@
 	"zenMode.hideTabs": false,
 	"screencastMode.onlyKeyboardShortcuts": true,
 	"window.autoDetectHighContrast": false,
-	"workbench.colorTheme": "monokai-charcoal (green)",
+	"workbench.colorTheme": "monokai-charcoal (purple)",
 	"workbench.iconTheme": "material-icon-theme",
 	"extensions.ignoreRecommendations": true,
 	"telemetry.enableTelemetry": false,
