@@ -78,4 +78,6 @@ nnoremap <leader>ga :Git add %<CR>
 nnoremap <leader>gd :Git diff HEAD<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
-" TODO: Add home and end keymaps in insert mode
+imap <C-r> <Home>
+imap <C-u> <End>
+" TODO: Add home and end keymaps in normal mode
