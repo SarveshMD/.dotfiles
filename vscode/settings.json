@@ -81,7 +81,6 @@
 	"zenMode.hideTabs": false,
 	"screencastMode.onlyKeyboardShortcuts": true,
 	"window.autoDetectHighContrast": false,
-	"workbench.colorTheme": "monokai-charcoal (purple)",
 	"workbench.iconTheme": "material-icon-theme",
 	"extensions.ignoreRecommendations": true,
 	"telemetry.enableTelemetry": false,
@@ -100,5 +99,6 @@
 	"bracket-pair-colorizer-2.showBracketsInGutter": true,
 	"bracket-pair-colorizer-2.colors": ["#e100ff", "#00eeff", "#1fcf45", "#cf0056", "#ffac3e", "#ff7a7a", "#e5ff00"],
 	"livePreview.notifyOnOpenLooseFile": false,
-	"quokka.showOutputOnStart": false
+	"quokka.showOutputOnStart": false,
+	"workbench.colorTheme": "monokai-charcoal"
 }
