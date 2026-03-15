@@ -1,4 +1,4 @@
-# My Personal Dotfiles Repository
+# Dotfiles from Ubuntu (Home Desktop)
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD032 -->
 <!-- markdownlint-disable MD029 -->
