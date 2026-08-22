@@ -16,6 +16,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Commands
 export PATH="$HOME/.local/bin:$PATH"
 export FZF_DEFAULT_COMMAND="ag --ignore '.git' --ignore '*.swp' --hidden -g ''"
+export GPG_TTY=$(tty)
 setopt appendhistory
 HISTSIZE=10000
 SAVEHIST=10000
@@ -25,7 +26,15 @@ ZSH_AUTOSUGGEST_HISTORY_IGNORE="(youtube-dl *|curl *| wget *|rm *|rmdir *|cd *|c
 # Load; should be last.
 source ~/.zsh/.zsh_aliases
 source ~/.zsh/.zsh_keybindings
-source /usr/share/autojump/autojump.sh
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme > /dev/null
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/Random/script.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/.zsh/.p10k.zsh.
+[[ ! -f ~/.dotfiles/.zsh/.p10k.zsh ]] || source ~/.dotfiles/.zsh/.p10k.zsh
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[[ -s /home/sarvesh/.autojump/etc/profile.d/autojump.sh ]] && source /home/sarvesh/.autojump/etc/profile.d/autojump.sh
+
+export PATH="$HOME/opt/sqlcl/bin:$PATH"

@@ -4,6 +4,9 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+
+
+
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'                    " colorscheme
 Plug 'kaicataldo/material.vim'                      " colorscheme
@@ -13,7 +16,7 @@ Plug 'junegunn/fzf.vim'                             " fuzzy file finder
 Plug 'itchyny/lightline.vim'                        " statusline
 Plug 'tpope/vim-fugitive'                           " git integration
 Plug 'airblade/vim-gitgutter'                       " git gutter
-Plug 'davidhalter/jedi-vim'                         " autocomplete
+" Plug 'davidhalter/jedi-vim'                         " autocomplete
 Plug 'mattn/emmet-vim'                              " emmet for vim
 Plug 'preservim/nerdtree'                           " file tree
 Plug 'Xuyuanp/nerdtree-git-plugin'                  " git status in nerdtree
@@ -34,7 +37,6 @@ let gruvbox_contrast_dark = 'hard'
 let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.8, 'highlight': 'Todo', 'border': 'rounded' } }
 let NERDTreeIgnore=['.git', '\.swp', '\~$']
 let NERDTreeShowHidden=1
-let mapleader = " "
 
 filetype plugin on
 syntax on
@@ -70,14 +72,17 @@ set backspace=indent,eol,start
 set nocompatible
 set textwidth=0
 
-nnoremap <C-p> :FZF<CR>
+" nnoremap <C-p> :FZF<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
-nnoremap <C-t> :tabedit .<CR>
-nnoremap <leader>gs :G<CR>
-nnoremap <leader>ga :Git add %<CR>
-nnoremap <leader>gd :Git diff HEAD<CR>
-nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gp :Git push<CR>
-imap <C-r> <Home>
-imap <C-u> <End>
+" nnoremap <C-t> :tabedit .<CR>
+" nnoremap <leader>gs :G<CR>
+" nnoremap <leader>ga :Git add %<CR>
+" nnoremap <leader>gd :Git diff HEAD<CR>
+" nnoremap <leader>gc :Git commit<CR>
+" nnoremap <leader>gp :Git push<CR>
+let mapleader = " "
+
+nnoremap <leader>o :put _<CR>
+nnoremap <leader>O :put! _<CR>
+
 " TODO: Add home and end keymaps in normal mode

@@ -1,9 +1,11 @@
 # Custom Aliases
 alias l='echo Running ls -lFh; ls -lFh --color=auto'
 alias la='echo Running ls -laFh; ls -laFh --color=auto'
+alias ll='echo Running ls -lFh; ls -lFh'
 alias c="clear"
 alias ls='ls --color=auto'
 alias grep='grep --color'
+alias bat="batcat"
 
 # Git Aliases
 alias gs="echo 'Running git status'; git status"
@@ -29,3 +31,6 @@ alias cputemp='float cpu_temp="$(</sys/class/thermal/thermal_zone0/temp) / 1000"
 alias emoji="source ~/.CustomResources/emoji.sh"
 alias comp="python3 ~/.CustomResources/compile.py"
 alias bkp="python3 ~/.CustomResources/backup.py"
+
+# fix typing errors
+alias dc='cd'
